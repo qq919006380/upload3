@@ -38,6 +38,12 @@
         <h2 class="text-2xl font-semibold text-blue-600 mb-4">3. Usage</h2>
         <p class="text-gray-800">
           Import the component in your main.js:
+
+        </p>
+        <p>
+          Supported IPFS Service Providers for upload3:
+          <a href="https://nft.storage/"
+            class="text-blue-600 hover:text-blue-400 transition duration-300 ease-in-out">nft.storage</a>
         </p>
         <pre class="bg-gray-200 p-4 rounded-lg text-sm mb-4">
 import { createApp } from "vue";
@@ -59,8 +65,17 @@ app.mount("#app");
         <div class="w-3/5">
           <upload3 @on-success="handleSuccess" @on-error="handleError"></upload3>
         </div>
-        <div class="w-2/5">
-          {{ data }}
+        <div class="w-2/5  mt-10 flex items-center">
+          <div class="break-words">
+            <div>
+              <span class="text-black mx-2">cid:</span>
+              <span class="  text-gray-400">"{{ data.cid }}"</span>
+            </div>
+            <div>
+              <span class="text-black mx-2">url:</span>
+              <span class="  text-gray-400">"{{ data.url }}"</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -90,12 +105,14 @@ app.mount("#app");
         <ul class="list-disc pl-6">
 
           <li>
-            <a href="https://github.com/qq919006380/upload3/issues" class="text-blue-600 hover:text-blue-400 transition duration-300 ease-in-out">Open an Issue</a>
+            <a href="https://github.com/qq919006380/upload3/issues"
+              class="text-blue-600 hover:text-blue-400 transition duration-300 ease-in-out">Open an Issue</a>
             to report a problem or suggest an enhancement.
           </li>
 
           <li>
-            <a href="https://github.com/qq919006380/upload3/pulls" class="text-blue-600 hover:text-blue-400 transition duration-300 ease-in-out">Create a Pull
+            <a href="https://github.com/qq919006380/upload3/pulls"
+              class="text-blue-600 hover:text-blue-400 transition duration-300 ease-in-out">Create a Pull
               Request</a>
             to contribute code changes or fixes.
           </li>
