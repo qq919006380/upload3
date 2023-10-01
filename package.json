@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build:doc": "vue-tsc && vite build --mode doc",
+    "build:docs": "vue-tsc && vite build --mode docs",
     "build:lib": "vue-tsc && vite build --mode lib",
     "preview": "vite preview"
   },

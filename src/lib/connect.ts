@@ -2,7 +2,7 @@ import { NFTStorage } from 'nft.storage';
 
 export declare namespace Uploader3Connector {
   interface PostImageFile {
-    data: string;
+    data: Blob;
     type: 'image/png' | 'image/jpeg' | 'image/gif' | 'image/jpg';
   }
 
@@ -15,7 +15,7 @@ export const createNFTStorageConnector = (options: { token: string }): Uploader3
   const { token } = options;
   const client = new NFTStorage({ token });
   return {
-    postImage: async ({data,type}) => {
+    postImage: async ({data}) => {
       const cid = await client.storeBlob(data);
       await client.check(cid);
 

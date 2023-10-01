@@ -2,7 +2,7 @@
 
 ## Introduction
 
-一个基于 vue 的 web3 上传组件
+A web3 upload component based on Vue.
 
 ## Installation
 
@@ -12,6 +12,7 @@
 
 ## Usage
 Import the component in your main.js:
+Please note that the <YOUR_TOKEN> should be replaced with your actual token.
 ```js
 import { createApp } from "vue";
 import "./style.css";
@@ -47,7 +48,6 @@ let handleError = (error) => {
 
 </script>
 ```
-Please note that the <YOUR_TOKEN> should be replaced with your actual token.
 
 
 

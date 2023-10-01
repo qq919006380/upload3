@@ -8,8 +8,8 @@ export default ({ command, mode }) => {
       },
       outDir: 'lib',
     },
-    doc:{
-      outDir: 'doc',
+    docs:{
+      outDir: 'docs',
     }
   }
   const config = {
