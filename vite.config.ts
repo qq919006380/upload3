@@ -13,6 +13,7 @@ export default ({ command, mode }) => {
     }
   }
   const config = {
+    base:'upload3',
     plugins: [vue()],
     build: buildMap[mode]
   };
