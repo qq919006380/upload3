@@ -1,19 +1,17 @@
 # upload3
 
-## 介绍
+## Introduction
 
 一个基于 vue 的 web3 上传组件
 
-## 安装
+## Installation
 
 ```bash
  yarn add upload3    # or  npm install upload3
 ```
 
-## 使用
-
-main.js 引入组件
-
+## Usage
+Import the component in your main.js:
 ```js
 import { createApp } from "vue";
 import "./style.css";
@@ -27,8 +25,7 @@ app.use(Upload3, {
 app.mount("#app");
 ```
 
-App.vue 使用组件
-
+Use the component in your App.vue:
 ```vue
 <template>
   <upload3></upload3>
@@ -50,3 +47,9 @@ let handleError = (error) => {
 
 </script>
 ```
+Please note that the <YOUR_TOKEN> should be replaced with your actual token.
+
+
+
+
+
