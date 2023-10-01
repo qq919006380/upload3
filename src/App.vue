@@ -46,6 +46,15 @@ app.use(async (ctx) => {
 app.listen(3000);
         </pre>
       </section>
+      <p class="text-gray-800">
+        preview
+      </p>
+      <section class="bg-gray-200 p-4 rounded-lg text-sm mb-4">
+        <upload3 @on-success="handleSuccess" @on-error="handleError"></upload3>
+        <div>
+          {{ data }}
+        </div>
+      </section>
 
       <!-- 第四部分：进一步资源 -->
       <section class="mb-8">
@@ -74,4 +83,14 @@ app.listen(3000);
   </div>
 </template>
 <script setup>
+import { ref } from 'vue';
+let data = ref("null")
+let handleSuccess = (result) => {
+  console.log(result);
+  data.value = result
+}
+let handleError = (error) => {
+  console.error(error);
+}
+ 
 </script>

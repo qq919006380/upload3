@@ -15,8 +15,8 @@ export const createNFTStorageConnector = (options: { token: string }): Uploader3
   const { token } = options;
   const client = new NFTStorage({ token });
   return {
-    postImage: async (image: any) => {
-      const cid = await client.storeBlob(image);
+    postImage: async ({data,type}) => {
+      const cid = await client.storeBlob(data);
       await client.check(cid);
 
       return { cid, url: `https://nftstorage.link/ipfs/${cid}` };
