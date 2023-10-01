@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A web3 upload component based on Vue.
+A web3 upload component based on Vue.  [Online Documentation](https://qq919006380.github.io/upload3/)
 
 ## Installation
 
