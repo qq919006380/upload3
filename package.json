@@ -1,12 +1,16 @@
 {
   "name": "upload3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build:docs": "vue-tsc && vite build --mode docs",
     "build:lib": "vue-tsc && vite build --mode lib",
     "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qq919006380/upload3.git"
   },
   "main": "dist/upload3.js",
   "dependencies": {
